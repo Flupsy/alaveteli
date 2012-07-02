@@ -2,7 +2,7 @@ These instructions assume Debian Squeeze or Ubuntu 10.04 LTS.
 [Install instructions for OS X](https://github.com/sebbacon/alaveteli/wiki/OS-X-Quickstart)
 are under development.  Debian Squeeze is the best supported
 deployment platform.
-
+ 
 Commands are intended to be run via the terminal or over ssh.
 
 As an aid to evaluation, there is an
@@ -54,7 +54,7 @@ Some of the files also have a version number listed in config/packages
 
 # Install Ruby dependencies
 
-Install rubygems 1.6.1 (we're not using the Debian package because we
+Install rubygems 1.6.2 (we're not using the Debian package because we
 need an older version; see "Troubleshooting" below for an
 explanation):
 
@@ -469,10 +469,6 @@ various other things that can be automated for deployment.
     It may be that the binaries installed by bundler are not put in the
     system `PATH`; therefore, in order to run `rake` (needed for
     deployments), you may need to do something like:
-
-        ln -s /usr/lib/ruby/gems/1.8/bin/rake /usr/local/bin/
-    
-    Or (Debian):
 
         ln -s /usr/lib/ruby/gems/1.8/bin/rake /usr/local/bin/
 

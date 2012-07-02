@@ -1,3 +1,20 @@
+# Version 0.6.1
+## Highlighted features
+
+* Fixes important security bug [issue #515](https://github.com/sebbacon/alaveteli/issues/515)
+* Show admin nav bar when browsing main site
+* A new API for adding requests and correspondence to an Alaveteli
+  instance, designed for use by public bodies that wish to use
+  Alaveteli as a disclosure log.  See
+  [the wiki](https://github.com/sebbacon/alaveteli/wiki/API) for some
+  documentation.
+* [Full list of changes on github](https://github.com/sebbacon/alaveteli/issues?milestone=8&state=closed)
+
+## Upgrade notes
+
+* No special action required -- just check out this version and run
+  `rails-post-deploy` as usual.
+
 # Version 0.6
 
 ## Highlighted features
@@ -6,7 +23,7 @@
 * Support for invalidating accelerator cache -- this makes it much
   less likely, when using Varnish, that users will be presented with
   stale content.  Fixes
-  [issue #436](https://github.com/sebbacon/alaveteli/issues/436)
+  
 * Adding a `GA_CODE` to `general.yml` will cause the relevant Google
   Analytics code to be added to your rendered pages
 * It is now possible to have more than one theme installed.  The
@@ -30,6 +47,7 @@
   was fixed
   ([issue #503](https://github.com/sebbacon/alaveteli/issues/503))
 * Error pages are now presented with styling from themes
+* [Full list of changes on github](https://github.com/sebbacon/alaveteli/issues?milestone=13&state=closed)
 
 ## Upgrade notes
 
